@@ -4,5 +4,5 @@ function initStyle(listDom, className, targetDom) {
     }
     targetDom.classList.add(className);
 }
-initStyle(oDD,'active',e.target);
-initStyle(contentActive,'content-active',rightContent);
+initStyle(oDD, 'active', e.target);
+initStyle(contentActive, 'content-active', rightContent);
