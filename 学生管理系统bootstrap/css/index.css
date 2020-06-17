@@ -1,0 +1,112 @@
+html{
+    font-size:14px;
+    font-family: 'YouYuan';
+}
+
+/* 头部 */
+#head{
+    height: 4.5rem;
+    background:linear-gradient(90deg,#333,#111,#aaa);
+}
+#head .bg{
+    background:url('../images/bg.png') repeat center;
+}
+
+/*  */
+#head .navbar-brand span{
+    font-size:1.7rem;
+    text-shadow:4px 2px 6px #ccc;
+    animation:jumping 0.7s infinite alternate; 
+}
+#head .navbar-brand .du{
+    animation-delay:0s;
+}
+#head .navbar-brand .yi{
+    animation-delay:0.25s;
+}
+#head .navbar-brand .jiao{
+    animation-delay:0.5s;
+}
+#head .navbar-brand .yu{
+    animation-delay:0.75s;
+}
+@keyframes jumping{
+    0%{
+        transform: translateY(0);
+        text-shadow:4px 2px 6px #ccc; 
+    }
+    100%{
+        transform: translateY(-20px);
+        text-shadow:3px 5px 6px rgba(255,255,255,0.5); 
+    }
+}
+
+
+#nav{
+    left: 0;
+    top: 4.5rem;
+    background:linear-gradient(#333,#222,#111);
+}
+#nav a{
+    color: #ccc;
+}
+#nav a:hover{
+    color: #fff;
+}
+
+#head .bg button:hover svg{
+    animation:change 2s ease-in-out infinite;
+}
+@keyframes change{
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(45deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.content{
+    background:linear-gradient(#3a3a3a,#222,#111);
+}
+.conLeft{
+    height: calc(100vh - 4.5rem);
+    background:url('../images/bg.png') repeat center;
+    box-sizing: border-box;
+}
+.conLeft .subNav a{
+    width: 180px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: 0.3s ease-in-out;
+}
+.conLeft .subNav a.active,.conLeft .subNav a:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+.conRight{
+    height: calc(100vh - 4.5rem);
+    background: #e5e5e5;
+    box-sizing: border-box;
+}
+
+#page{
+    position:absolute;
+    right:45%;
+}
+
+#student-echarts .area,#student-echarts .sex{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+}
+
+
